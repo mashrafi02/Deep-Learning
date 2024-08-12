@@ -1,0 +1,1 @@
+For loss and cost function see the tutorial 11 of deep learning course in coderbasics cjannel
