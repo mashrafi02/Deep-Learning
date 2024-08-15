@@ -1,0 +1,30 @@
+###. y_predicted = m*x_train + b
+
+for linear regression
+
+
+1. mse = 1/n(sum(y_train - y_predicted)^2)
+
+2. del/delm = 2/n(sum(-x_train(y_train - y_predicted)))
+
+3. del/delb = 2/n(sum(-(y_train - y_predicted)))
+
+4. new_m = m - learning_rate * del/delm
+
+5. new_b = m - learning_rate * del/delb
+
+
+for classification
+
+1. log_loss = -1/n(sum(y_train*log(y_predicted)+(1-y_train)*log(1-y_predicted)))
+
+2. del/delm = 1/n(sum(-x(y_train - y_predicted))
+
+3. del/delb = 1/n(sum(-(y_train - y_predicted)))
+
+4. new_m = m - learning_rate * del/delm
+
+5. new_b = m - learning_rate * del/delb
+
+
+###. matrix multiplication => 1st column == 2nd row
